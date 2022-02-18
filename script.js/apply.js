@@ -24,9 +24,20 @@ document.getElementById("save-btn").addEventListener("click", function () {
         // console.log(saveInput);
         // add total saving balance
         let incomeMoney = document.getElementById("income-money").value;
+
+        // add total balance value
+        let totalBalance = document.getElementById("total-balance").innerText
         // division
         let saveingAmount = incomeMoney / saveInput;
+
+        // let remaing amount 
+        let remaingAmount = totalBalance - saveingAmount;
+        // update save balance
         document.getElementById("saving-amount").innerText = saveingAmount;
+
+        // update remaing balance
+        document.getElementById("remaining-balance").innerText = remaingAmount;
+
     }
     saveMoney()
 })
