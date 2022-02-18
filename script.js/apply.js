@@ -12,6 +12,7 @@ document.getElementById("cal-btn").addEventListener("click", function () {
         // Update Expenses and Balance
         document.getElementById("total-expenses").innerText = totalExpenses;
         document.getElementById("total-balance").innerText = ExpensesAmount;
+
     }
     updateBalance()
 })
@@ -20,13 +21,14 @@ document.getElementById("save-btn").addEventListener("click", function () {
     function saveMoney() {
         // Input value show
         let saveInput = document.getElementById("save-input").value;
-        // Saveing Amount
-        let saveAmount = ExpensesAmount - saveInput;
-        // Reaining Balance
-        let remainingBalance = ExpensesAmount - saveAmount;
-        // update saveing Amount
-        document.getElementById("saving-amount").innerText = saveAmount;
-        document.getElementById("remaining-balance").innerText = remainingBalance;
+        // console.log(saveInput);
+        // add total saving balance
+        let incomeMoney = document.getElementById("income-money").value;
+        // division
+        let saveingAmount = incomeMoney / saveInput;
+        document.getElementById("saving-amount").innerText = saveingAmount;
     }
     saveMoney()
 })
+
+
