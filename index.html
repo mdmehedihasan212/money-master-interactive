@@ -18,12 +18,15 @@
 <body>
     <!-- Header Start -->
     <header>
-        <h1 class="text-center text-primary mb-5">Money Budget<i class="fa-solid fa-bangladeshi-taka-sign"></i></h1>
+        <h1 class="text-center text-primary mb-3">Money Budget<i class="fa-solid fa-bangladeshi-taka-sign"></i></h1>
     </header>
     <!-- Main Tag Start -->
     <main>
         <section class="d-flex justify-content-center mx-auto">
-            <img src="./images/money-budget.jpeg" alt="">
+            <div>
+                <img src="./images/illustration-concept-happy-put-gold-coins-wallet-parents.jpg" alt="" width="70%"
+                    height="auto">
+            </div>
             <div class="border border-1 px-5 mx-5 text-center">
                 <h4 class="m-3">Income</h4>
                 <h6 class="m-2">Income: <input type="text" name="" id="income-money"></h6>
@@ -34,12 +37,18 @@
                 <button id="cal-btn" type="button" class="btn btn-primary m-2 px-5">Calculate</button>
                 <h4 class="m-2">Total Expenses: <span id="total-expenses"></span></h4>
                 <h4 class="m-3">Balance: <span id="total-balance"></span></h4>
-                <h6 class="m-3">Save: <input type="text" name="" id="save-input" width="50%"> % <button type="button"
-                        class="btn btn-primary px-5" id="save-btn">Save</button> </h6>
+                <h6 class="m-3">Save: <input class="input-box" type="text" name="" id="save-input"> % <button
+                        type="button" class="btn btn-primary px-5" id="save-btn">Save</button> </h6>
                 <h4 class="m-3">Saving Amount: <span id="saving-amount"></span></h4>
                 <h4 class="m-3">Remaining Balance: <span id="remaining-balance"></span></h4>
             </div>
         </section>
+        <footer>
+            <div>
+                <p id="num-notify" class="notify fw-bold text-danger">Please Input A Number</p>
+                <p id="nam-notify" class="notify fw-bold text-danger">Its Not A Number</p>
+            </div>
+        </footer>
     </main>
 
     <!-- Link Script Js -->
